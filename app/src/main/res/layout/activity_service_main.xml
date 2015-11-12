@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_blue_bright"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ServiceMainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStartService"
+        android:onClick="startService"
+        android:layout_marginTop="119dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/buttonGotoNext"
+        android:layout_toStartOf="@+id/buttonGotoNext"
+        android:background="@drawable/start_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStopService"
+        android:onClick="stopService"
+        android:layout_alignTop="@+id/buttonStartService"
+        android:layout_toRightOf="@+id/buttonGotoNext"
+        android:layout_toEndOf="@+id/buttonGotoNext"
+        android:background="@drawable/shutdown" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGotoNext"
+        android:background="@drawable/next"
+        android:onClick="gotoNext"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+         />
+
+</RelativeLayout>
